@@ -37,9 +37,7 @@ export function ContactSection() {
     <section id="contacto" className="py-20 sm:py-24 lg:py-32 bg-secondary/30">
       <div
         ref={ref}
-        className={`mx-auto max-w-3xl px-4 sm:px-6 text-center transition-all duration-700 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}
+        className={`mx-auto max-w-3xl px-4 sm:px-6 text-center`}
       >
         <div className="flex items-center justify-center gap-3 mb-4">
           <div className="h-px w-10 bg-primary" />
@@ -64,7 +62,7 @@ export function ContactSection() {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-1 flex-col items-center gap-3 rounded-xl border border-border bg-card p-6 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 hover:-translate-y-1"
+              className="group flex flex-1 flex-col items-center gap-3 rounded-xl border border-border bg-card p-6 hover:border-primary/40 hover:bg-primary/5"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                 <link.icon className="h-5 w-5" />

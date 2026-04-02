@@ -38,9 +38,7 @@ export function AboutSection() {
     <section id="sobre-mi" className="py-20 sm:py-24 lg:py-32 bg-secondary/30">
       <div
         ref={ref}
-        className={`mx-auto max-w-6xl px-4 sm:px-6 transition-all duration-700 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}
+        className={`mx-auto max-w-6xl px-4 sm:px-6`}
       >
         <div className="flex items-center gap-3 mb-4">
           <div className="h-px flex-1 max-w-[60px] bg-primary" />
@@ -89,10 +87,7 @@ export function AboutSection() {
             {highlights.map((item, i) => (
               <div
                 key={item.title}
-                className={`group rounded-xl border border-border bg-card p-5 sm:p-6 hover:border-primary/30 hover:bg-primary/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 ${
-                  isVisible ? 'animate-fade-up' : 'opacity-0'
-                }`}
-                style={{ animationDelay: `${i * 120 + 200}ms` }}
+                className={`group rounded-xl border border-border bg-card p-5 sm:p-6 hover:border-primary/30 hover:bg-primary/5`}
               >
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 mb-4">
                   <item.icon className="h-5 w-5 text-primary" />

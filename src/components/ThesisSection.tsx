@@ -92,9 +92,7 @@ export function ThesisSection() {
     <section className="py-24 sm:py-32 bg-secondary/30">
       <div
         ref={ref}
-        className={`mx-auto max-w-6xl px-6 transition-all duration-700 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}
+        className={`mx-auto max-w-6xl px-6`}
       >
         <div className="flex items-center gap-3 mb-4">
           <div className="h-px flex-1 max-w-[60px] bg-primary" />
@@ -123,7 +121,7 @@ export function ThesisSection() {
                 </div>
               </div>
 
-              <p className="text-muted-foreground leading-relaxed text-sm">
+              <p className="text-muted-foreground leading-relaxed text-sm font-medium">
                 Sistema basado en visión computacional e inteligencia artificial para traducir señas
                 manuales y expresiones faciales de la Lengua de Señas Americana a voz, mejorando la
                 comunicación de personas con discapacidad para hablar en plataformas de reuniones en
@@ -136,7 +134,7 @@ export function ThesisSection() {
                     <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary/10 mt-0.5">
                       <obj.icon className="h-3.5 w-3.5 text-primary" />
                     </div>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{obj.text}</p>
+                    <p className=" text-xs text-muted-foreground leading-relaxed">{obj.text}</p>
                   </div>
                 ))}
               </div>
@@ -145,7 +143,7 @@ export function ThesisSection() {
                 {techStack.map((tech) => (
                   <span
                     key={tech}
-                    className="inline-flex items-center rounded-md border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium text-primary"
+                    className="inline-flex items-center rounded-md border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-semibold text-primary"
                   >
                     {tech}
                   </span>

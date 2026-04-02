@@ -9,6 +9,7 @@ const navLinks = [
   { label: 'Contacto', href: '#contacto' },
 ]
 
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -19,6 +20,10 @@ export function Navbar() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  const logoSrc =
+    theme === "dark" ? "/logo-light.png" : "/logo.png";
+
 
   return (
     <nav
@@ -31,14 +36,14 @@ export function Navbar() {
       <div className="mx-auto max-w-6xl flex items-center justify-between px-4 sm:px-6 h-20">
         {/* Logo text instead of image */}
         <a href="#" className="flex items-center h-20">
-          <img
-            src="/logo.png"
-            alt="Logo"
-            className="h-8 w-auto mr-2"
-          />
+        <img
+        src={logoSrc}
+        alt="Logo"
+        className="h-10 w-auto mr-2 transition-all duration-300"
+      />
         </a>
 
-        <div className="font-sans hidden md:flex items-center gap-8">
+        <div className="font-display hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.href}

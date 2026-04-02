@@ -65,10 +65,7 @@ function ProjectCard({
 }) {
   return (
     <div
-      className={`group relative flex flex-col rounded-xl border border-border bg-card overflow-hidden hover:border-primary/40 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-primary/5 ${
-        isVisible ? 'animate-fade-up' : 'opacity-0'
-      }`}
-      style={{ animationDelay: `${index * 100 + 100}ms` }}
+      className={`group relative flex flex-col rounded-xl border border-border bg-card overflow-hidden hover:border-primary/40`}
     >
       <div className="flex flex-col flex-1 p-6">
         <div className="flex items-start justify-between mb-3">
@@ -88,11 +85,11 @@ function ProjectCard({
 
         <p className="text-sm text-muted-foreground leading-relaxed flex-1">{project.description}</p>
 
-        <div className="mt-4 flex flex-wrap gap-1.5">
+        <div className=" mt-4 flex flex-wrap gap-1.5">
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="inline-flex items-center rounded-md bg-secondary px-2 py-0.5 text-xs font-medium text-secondary-foreground"
+              className="inline-flex items-center rounded-md bg-muted-foreground/8 px-2 py-0.5 text-xs font-semibold text-secondary-foreground"
             >
               {tech}
             </span>
@@ -120,9 +117,7 @@ export function ProjectsSection() {
     <section id="proyectos" className="py-20 sm:py-24 lg:py-32">
       <div
         ref={ref}
-        className={`mx-auto max-w-6xl px-4 sm:px-6 transition-all duration-700 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}
+        className={`mx-auto max-w-6xl px-4 sm:px-6`}
       >
         <div className="flex items-center gap-3 mb-4">
           <div className="h-px flex-1 max-w-[60px] bg-primary" />

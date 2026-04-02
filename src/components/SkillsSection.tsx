@@ -47,6 +47,7 @@ const categories: SkillCategory[] = [
       { name: 'Figma', abbr: 'Fi' },
       { name: 'Blender', abbr: 'Bl' },
       { name: 'Unity', abbr: 'Un' },
+      { name: 'Illustrator', abbr: 'AI' },
     ],
   },
 ]
@@ -58,9 +59,7 @@ export function SkillsSection() {
     <section id="habilidades" className="py-20 sm:py-24 lg:py-32">
       <div
         ref={ref}
-        className={`mx-auto max-w-6xl px-4 sm:px-6 transition-all duration-700 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}
+        className={`mx-auto max-w-6xl px-4 sm:px-6`}
       >
         <div className="flex items-center gap-3 mb-4">
           <div className="h-px flex-1 max-w-[60px] bg-primary" />
@@ -81,9 +80,7 @@ export function SkillsSection() {
           {categories.map((category, catIndex) => (
             <div
               key={category.title}
-              className={`group rounded-xl border border-border bg-card p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 ${
-                isVisible ? 'animate-fade-up' : 'opacity-0'
-              }`}
+              className={`group rounded-xl border border-border bg-card p-6 hover:border-primary/30`}
               style={{ animationDelay: `${catIndex * 120 + 100}ms` }}
             >
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 mb-5 group-hover:bg-primary/20 transition-colors duration-300">
