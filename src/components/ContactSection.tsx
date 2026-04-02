@@ -31,12 +31,10 @@ const contactLinks: ContactLink[] = [
 ]
 
 export function ContactSection() {
-  const { ref, isVisible } = useScrollAnimation(0.1)
 
   return (
     <section id="contacto" className="py-20 sm:py-24 lg:py-32 bg-secondary/30">
       <div
-        ref={ref}
         className={`mx-auto max-w-3xl px-4 sm:px-6 text-center`}
       >
         <div className="flex items-center justify-center gap-3 mb-4">

@@ -86,12 +86,10 @@ function SystemDiagram() {
 }
 
 export function ThesisSection() {
-  const { ref, isVisible } = useScrollAnimation(0.1)
 
   return (
     <section className="py-24 sm:py-32 bg-secondary/30">
       <div
-        ref={ref}
         className={`mx-auto max-w-6xl px-6`}
       >
         <div className="flex items-center gap-3 mb-4">

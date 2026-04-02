@@ -56,12 +56,8 @@ const projects: Project[] = [
 
 function ProjectCard({
   project,
-  index,
-  isVisible,
 }: {
   project: Project
-  index: number
-  isVisible: boolean
 }) {
   return (
     <div
@@ -111,12 +107,10 @@ function ProjectCard({
 }
 
 export function ProjectsSection() {
-  const { ref, isVisible } = useScrollAnimation(0.1)
 
   return (
     <section id="proyectos" className="py-20 sm:py-24 lg:py-32">
       <div
-        ref={ref}
         className={`mx-auto max-w-6xl px-4 sm:px-6`}
       >
         <div className="flex items-center gap-3 mb-4">
@@ -136,7 +130,7 @@ export function ProjectsSection() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.map((project, i) => (
-            <ProjectCard key={project.title} project={project} index={i} isVisible={isVisible} />
+            <ProjectCard key={project.title} project={project}/>
           ))}
         </div>
       </div>

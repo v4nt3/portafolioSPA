@@ -32,12 +32,10 @@ const highlights: Highlight[] = [
 ]
 
 export function AboutSection() {
-  const { ref, isVisible } = useScrollAnimation(0.1)
 
   return (
     <section id="sobre-mi" className="py-20 sm:py-24 lg:py-32 bg-secondary/30">
       <div
-        ref={ref}
         className={`mx-auto max-w-6xl px-4 sm:px-6`}
       >
         <div className="flex items-center gap-3 mb-4">
