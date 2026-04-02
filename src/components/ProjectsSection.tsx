@@ -1,6 +1,5 @@
 import { ExternalLink } from 'lucide-react'
 import { FaGithub } from 'react-icons/fa'
-import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 interface Project {
   title: string
@@ -129,7 +128,7 @@ export function ProjectsSection() {
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {projects.map((project, i) => (
+          {projects.map((project) => (
             <ProjectCard key={project.title} project={project}/>
           ))}
         </div>

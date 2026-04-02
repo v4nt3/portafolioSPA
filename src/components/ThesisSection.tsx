@@ -1,5 +1,4 @@
-import { ExternalLink, BookOpen, Hand, Eye, Mic, Brain, ArrowDown } from 'lucide-react'
-import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import { BookOpen, Hand, Eye, Mic, Brain, ArrowDown } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 
 const techStack = ['Python', 'OpenCV', 'MediaPipe', 'Pytorch', 'FastAPI', 'Flutter']

@@ -1,5 +1,4 @@
 import { Code, Layers, Database, Paintbrush } from 'lucide-react'
-import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import type { LucideIcon } from 'lucide-react'
 
 interface SkillCategory {

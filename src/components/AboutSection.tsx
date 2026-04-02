@@ -1,5 +1,4 @@
 import { GraduationCap, Code, Palette, Sparkles } from 'lucide-react'
-import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import type { LucideIcon } from 'lucide-react'
 
 interface Highlight {
@@ -82,7 +81,7 @@ export function AboutSection() {
 
           {/* Right: Highlight Cards */}
           <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {highlights.map((item, i) => (
+            {highlights.map((item) => (
               <div
                 key={item.title}
                 className={`group rounded-xl border border-border bg-card p-5 sm:p-6 hover:border-primary/30 hover:bg-primary/5`}

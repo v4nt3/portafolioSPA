@@ -1,5 +1,4 @@
 import { Mail, Linkedin ,Github, ArrowUpRight } from 'lucide-react'
-import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import type { LucideIcon } from 'lucide-react'
 
 interface ContactLink {
