@@ -1,4 +1,4 @@
-import { ArrowDown , Mail, Eye } from 'lucide-react'
+import { Mail, Eye } from 'lucide-react'
 import { FaGithub } from 'react-icons/fa'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
@@ -10,10 +10,6 @@ export function HeroSection() {
       ref={ref}
       className="relative min-h-screen flex items-center overflow-hidden"
     >
-      {/* Grid background */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border))_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20" />
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] via-transparent to-transparent" />
-
       <div
         className={`relative z-10 mx-auto max-w-xl w-full px-4 sm:px-6 py-15 sm:py-18 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
@@ -81,7 +77,6 @@ export function HeroSection() {
             className="inline-flex animate-bounce text-muted-foreground hover:text-primary transition-colors"
             aria-label="Ir a sobre mi"
           >
-            <ArrowDown className="h-5 w-5" />
           </a>
         </div>
       </div>
