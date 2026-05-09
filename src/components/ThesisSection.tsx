@@ -149,7 +149,7 @@ export function ThesisSection() {
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href="https://signbridge-frontend.vercel.app/"
+                  href="https://signbridge-asl.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-card-foreground hover:border-primary/40 hover:bg-primary/5 transition-all duration-200"
